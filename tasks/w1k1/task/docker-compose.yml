@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  w1k1:
+    build: app
+    container_name: "w1k1"
+    restart: always
+    ports:
+      - "10004:3000"
+    env:
+      FLAG: HITS{my_f4v0r173_4r71cl3_15_rc3}
+    networks:
+      - default
+      - internal
+
+  l0c4l_5tub:
+    build: stub
+    container_name: "l0c4l_5tub"
+    restart: always
+    expose: 
+      - 80
+    networks:
+      - internal
+
+networks:
+  default:
+  internal:
+    internal: true

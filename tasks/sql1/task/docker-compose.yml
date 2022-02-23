@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  backend:
+    build: .
+    container_name: sql1
+    ports:
+      - "10007:8000"
+    restart: "always"
+    networks:
+      - default
+      - private
+    depends_on: 
+      - db
+  db:
+    image: mysql
+    container_name: db
+    hostname: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sqli
+      MYSQL_USER: sqli
+      MYSQL_PASSWORD: sqli
+    ports:
+      - "3306:3306"
+    restart: "always"
+    networks:
+      - private
+    volumes:
+      - "./db.sql:/docker-entrypoint-initdb.d/init.sql"
+
+networks:
+  default:
+  private:
+    internal: true
+

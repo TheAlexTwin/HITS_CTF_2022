@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  c47445:
+    build: .
+    container_name: "c47445"
+    env_file:
+      - .env
+    ports:
+      - "10001:8080"
+    restart: "always"

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    menu
+        h1 HITS Wikipedia
+        p We stole everything from them.
+        i Everything except the design.
+
+        br
+        br
+
+        form(action="/" method="GET")
+            input(name="search" value="" placeholder="Start searching")
+
+    article
+        h1 #{title}
+        p  #{text}
+
+    div(class="clearfix")

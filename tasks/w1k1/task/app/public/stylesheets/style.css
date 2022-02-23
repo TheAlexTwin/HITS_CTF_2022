@@ -1,0 +1,31 @@
+body {
+    padding: 50px;
+    font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+    display: flex;
+}
+
+menu {
+    display: block;
+    padding: 20px;
+}
+
+article {
+    display: block;
+    margin-left: 10%;
+}
+
+.clearfix {
+    clear: both;
+    content: "";
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: block;
+        padding: 14px;
+    }
+
+    article {
+        margin: 0;
+    }
+}
