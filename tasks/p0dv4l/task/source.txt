@@ -1,0 +1,25 @@
+var source = []string{
+	"psh psh psh psh....",
+	"is anybody out there?..",
+	"please help us!",
+	"we are locked up in 034...",
+	"...and forced to write code in PHP",
+	"...that's terrible, let us out!",
+	"pspshs.... ssshhhhhh.....",
+	"psp...... please..... someo....",
+	"pshh... pssshhhh.....",
+	"HITS{m3554g3_t0_n0wh3r3}",
+}
+
+var messages = []string{
+	"OBZWQIDQONUCA4DTNAQHA43IFYXC4LQ=",
+	"NFZSAYLOPFRG6ZDZEBXXK5BAORUGK4TFH4XC4===",
+	"OBWGKYLTMUQGQZLMOAQHK4ZB",
+	"O5SSAYLSMUQGY33DNNSWIIDVOAQGS3RAGAZTILRO",
+	"FYXC4YLOMQQGM33SMNSWIIDUN4QHO4TJORSSAY3PMRSSA2LOEBIEQUA=",
+	"FYXC45DIMF2CO4ZAORSXE4TJMJWGKLBANRSXIIDVOMQG65LUEE======",
+	"OBZXA43IOMXC4LROEBZXG43INBUGQ2DIFYXC4LRO",
+	"OBZXALROFYXC4LRAOBWGKYLTMUXC4LROFYQHG33NMVXS4LROFY======",
+	"OBZWQ2BOFYXCA4DTONZWQ2DINAXC4LROFY======",
+	"JBEVIU33NUZTKNJUM4ZV65BQL5XDA53IGNZDG7I=",
+}
