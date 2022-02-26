@@ -2,7 +2,7 @@
 
 ## Legend
 
-### w1k1 (Easygi)
+### w1k1 (Easy)
 
 #### RU
 
