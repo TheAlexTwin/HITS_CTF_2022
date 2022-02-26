@@ -5,7 +5,7 @@ services:
     build: .
     container_name: sql1
     ports:
-      - "10007:8000"
+      - "10002:8000"
     restart: "always"
     networks:
       - default
@@ -33,4 +33,3 @@ networks:
   default:
   private:
     internal: true
-

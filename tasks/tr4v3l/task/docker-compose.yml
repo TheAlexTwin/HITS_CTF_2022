@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  tr4v3l:
+    build: .
+    container_name: "tr4v3l"
+    depends_on:
+      - tr4v3l_r3d15
+    environment:
+      PORT: 10004
+      REDIS_ADDRESS: "tr4v3l_r3d15:6379"
+    ports:
+      - "10004:10004"
+    restart: "always"
+    networks:
+      - default
+      - redis_internal
+
+  tr4v3l_r3d15:
+    image: redis:latest
+    container_name: tr4v3l_r3d15
+    command: [ "redis-server", "--appendonly", "yes" ]
+    hostname: tr4v3l_r3d15
+    restart: always
+    expose:
+      - 6379
+    volumes:
+      - redis_data:/data
+    networks:
+      - redis_internal
+
+networks:
+  default:
+  redis_internal:
+    internal: true
+
+volumes:
+  redis_data:
