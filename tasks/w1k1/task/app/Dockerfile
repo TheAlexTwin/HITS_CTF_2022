@@ -1,5 +1,4 @@
 FROM node:14-alpine
-MAINTAINER "Alexander Zorkin"
 
 WORKDIR /app
 COPY . ./
