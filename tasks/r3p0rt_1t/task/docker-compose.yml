@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  r3p0rt_1t:
+    build: .
+    container_name: "r3p0rt_1t"
+    environment:
+      REDIS_HOST: r3d15
+    depends_on:
+      - r3d15
+    ports:
+      - "10005:8000"
+    restart: "always"
+    healthcheck:
+      test: python3 /app/src/admin_bot.py || exit 1
+      interval: 3m
+      timeout: 150s
+      retries: 1
+    networks:
+      - default
+      - redis_internal
+
+
+  r3d15:
+    image: redis:latest
+    container_name: r3d15
+    command: ["redis-server", "--appendonly", "yes"]
+    hostname: r3d15
+    restart: always
+    healthcheck:
+      test: redis-cli del reports || exit 1
+      interval: 90m
+      timeout: 10s
+      retries: 1
+    networks:
+      - redis_internal
+
+
+networks:
+  default:
+  redis_internal:
+    internal: true

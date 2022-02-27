@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Report it!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center text-center p-4">
+        <h1>Admin Panel</h1>
+      </div>
+      <div class="row text-center justify-content-center">
+        <div class="col col-auto">
+          <form action="/admin/login" method="POST">
+            <div class="input-group mb-3">
+              <input id="username" type="text" name="username" class="form-control" placeholder="username" aria-label="Username">
+            </div>
+
+            <div class="input-group mb-3">
+              <input id="password" type="password" name="password" class="form-control" placeholder="password">
+            </div>
+
+            <button class="btn btn-lg btn-primary mt-2" type="submit">Log in</button>
+          </form>
+        </div> 
+      </div>
+      <div class="row mt-4 text-center justify-content-center">
+        <div class="col col-auto">
+          <h6 class="text-secondary">Congrats, my little investigator.</h6>
+          <h6 class="text-secondary">I didn't expect to see you here.</h6>
+          <h6 class="text-secondary">And there is no flags for you today (seriously, I'm not joking).</h6>
+          <h6 class="text-secondary">Try to find them in some other location.</h6>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </body>
+</html>
