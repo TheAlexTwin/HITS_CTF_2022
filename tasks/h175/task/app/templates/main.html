@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <title>HITS myTask v0.9</title>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="\static\css\main.css">
+         <link rel="stylesheet" href="\static\css\project_area.css">
+         <link rel="stylesheet" href="\static\css\profile_edit.css">
+         <link rel="stylesheet" href="\static\css\header_content.css">
+         <link rel="stylesheet" href="\static\css\upload_content.css">
+         <link rel="stylesheet" href="\static\css\user_info_content.css">
+         <link rel="stylesheet" href="\static\css\directions_content.css">
+         <link rel="stylesheet" href="\static\css\registration_content.css">
+         <link rel="stylesheet" href="\static\css\project_info_content.css">
+         <link rel="stylesheet" href="\static\css\user_projects_content.css">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      </head>
+      <body>
+         <header>
+            <div class="content">
+               <a href="/index">
+                  <div class="logo">
+                     <img src="/static/resources/logo.jpg">
+                  </div>
+               </a>
+               <nav>
+                  <div class="tab">
+                     <a href="/info">
+                        <span>Информация о платформе</span>
+                     </a>
+                  </div>
+                  <div class="tab">
+                   <a href="/directions">
+                    <span>Категории заданий</span>
+                  </a>
+                 </div>
+                 <div class="tab">
+                   <a href="/projects/ideas">
+                    <span>Идеи для тасков</span>
+                  </a>
+                 </div>
+                 <div class="tab">
+                   <a href="/projects/active">
+                    <span>Таски в разработке</span>
+                  </a>
+                 </div>
+                 <div class="tab">
+                   <a href="/archive">
+                    <span>Реализованные идеи</span>
+                  </a>
+                 </div>
+               </nav>
+               {{view | safe}}
+            </div>
+         </header>
+         <div id="content">
+            <div id="main_column">
+               <div class="content">
+                  {{inner_html | safe}}
+               </div>
+            </div>
+         </div>
+         <footer>
+            <div class="content">
+               <span style="color: white;">Томск, 2021</span>
+            </div>
+         </footer>
+      </body>
+   </html>

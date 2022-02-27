@@ -1,0 +1,25 @@
+<div class="inf">
+   <h1>{{project}}</h1>
+   <span class="author">{{name}}</span>
+   <br>
+   <span class="direction">{{direction}}</span><span class="date">{{date}}</span>
+   <br>
+   <br>
+   <br>
+   <span class="description">{{description}}</span>
+   <br>
+   <br>
+   <span class="description">%s</span>
+   {{edit_project | safe}}
+</div>
+<h2>Комментарии</h2>
+<form action="http://localhost:5000/post_comment" method = "POST">
+   <div class="comment_form">
+      <input type="hidden" name="project_id" value="{{project_id}}"> </input>
+      <textarea placeholder="Оставьте комментарий здесь" name="comment" value=text></textarea>
+      <input class="submit" type="submit" value="Отправить"></input>
+   </div>
+</form>
+<div class="comments">
+  {{comments | safe}}
+</div>

@@ -1,0 +1,48 @@
+.directions
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding: 10px;
+   width: 900px;
+   flex-wrap: wrap;
+}
+
+.directions .direction
+{
+   margin: 5px;
+   width: 150px;
+   height: 150px;
+   background-repeat: round;
+   text-align: left;
+   color: white;
+}
+
+.direction .background
+{
+   height: 150px;
+   width: 150px;
+   z-index: -1;
+   position: absolute;
+}
+
+.direction .background img
+{
+   height: 100%;
+   width: 100%;
+}
+
+.shadow
+{
+   font-size: 24px;
+   font-weight: bold;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.45);
+   transition: 0.3s;
+}
+
+.shadow:hover
+{
+   background-color: rgba(0, 0, 0, 0);
+}

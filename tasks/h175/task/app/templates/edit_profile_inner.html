@@ -1,0 +1,33 @@
+<h1>Редактирование профиля</h1>
+<form action=/edit_profile method="post" enctype = "multipart/form-data">
+   <div class="edit_form_content">
+      Смена фотографии
+      <br>
+      <input type="file" name="file">
+      <br>
+      Смена логина
+      <br>
+      <input type="text" placeholder="Введите новый логин" name=new_username>
+      <br>
+      Смена почты
+      <br>
+      <input type="text" placeholder="Введите новый почтовый адресс" name=new_email>
+      <br>
+      Смена пароля
+      <br>
+      <input type="password" placeholder="Введите старый пароль" name=old_password>
+      <br>
+      <br>
+      <input type="password" placeholder="Введите новый пароль" name=new_password>
+      <br>
+      <input type="password" placeholder="Повторите новый пароль" name=cnew_password>
+      <br>
+      <input сlass="submit" type="submit" value="Отправить">
+   </div>
+</form>
+<br>
+<br>
+<br>
+<form action="/delete_profile" method="post">
+   <input type="submit" name="delete_profile" id="delete_profile" value="Удалить профиль">
+</form>

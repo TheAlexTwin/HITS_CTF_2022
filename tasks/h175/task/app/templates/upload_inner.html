@@ -1,0 +1,23 @@
+<div class="upload">
+  <h1>Загрузка задания</h1>
+  <form action = "http://localhost:5000/upload" method = "POST" enctype = "multipart/form-data">
+     <div class="upload_form">
+        <input type="text" placeholder="Название таска" style="font-size: 20px;" name=name>
+        <br>
+        <select name=direction>
+          {{options | safe}}
+        </select>
+        <br>
+        <textarea placeholder="Описание" name=description></textarea>
+        <br>
+        <textarea placeholder="Заметки для разработчика (можете видеть только вы)" name=information></textarea>
+        <br>
+        <input type="radio" name="status" class="radio_button" value="idea">идея задания</input>
+        <br>
+        <input type="radio" name="status" class="radio_button" value="unfinished">активный таск</input>
+        <br>
+        <br>
+        <input class="submit" type="Submit" value="Добавить таск">
+     </div>
+  </form>
+</div>

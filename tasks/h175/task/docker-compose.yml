@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  h175:
+    build: .
+    container_name: "h175"
+    restart: always
+    volumes:
+     - ./app:/app
+    ports:
+     - "10007:5000"

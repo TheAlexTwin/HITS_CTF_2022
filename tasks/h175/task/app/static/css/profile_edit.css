@@ -1,0 +1,15 @@
+.edit_form_content input
+{
+   margin: 5px;
+   width: 215px;
+}
+
+.edit_form_content textarea
+{
+   margin: 5px;
+}
+
+.edit_form_content select
+{
+   margin: 5px;
+}

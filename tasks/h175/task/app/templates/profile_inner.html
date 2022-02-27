@@ -1,0 +1,16 @@
+<div class="user_info">
+   <div class="photo">
+      <img src="{{image}}">
+   </div>
+   <div class="info">
+      <span class="name">{{name}}</span>
+      <br>
+      <span class="mail">{{email}}</span>
+      <br>
+      {{actions | safe}}
+   </div>
+</div>
+<div class="user_projects">
+   <h1>Проекты пользователя</h1>
+   {{projects | safe}}
+</div>

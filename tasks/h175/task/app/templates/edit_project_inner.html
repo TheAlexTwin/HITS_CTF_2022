@@ -1,0 +1,30 @@
+<h1>Редактирование проекта</h1>
+<form action="edit" method="post" enctype = "multipart/form-data">
+   <div class="edit_form_content">
+      Смена названия
+      <br>
+      <input type="text" placeholder="Введите новое название" name=name value={{name}}>
+      <br>
+      Смена описания
+      <br>
+      <textarea placeholder="Введите новое описание"  name=description>{{description}}</textarea>
+      <br>
+      Редактирование информации для автора
+      <br>
+      <textarea placeholder="Введите новое описание"  name=information>{{information}}</textarea>
+      <br>
+      Смена направления
+      <br>
+      <select name=direction>
+         {{options | safe}}
+      </select>
+      <br>
+      <input сlass="submit" type="submit" value="Отправить">
+   </div>
+</form>
+<br>
+<br>
+<br>
+<form action="delete" method="post">
+   <input type="submit" value="Удалить проект">
+</form>

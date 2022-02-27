@@ -1,0 +1,44 @@
+#container
+{
+   padding: 10px;
+}
+
+.registration_form
+{
+   padding: 4px;
+   font-family: 'Montserrat', sans-serif;
+   margin-left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+
+.registration_form input
+{
+   color: black;
+   padding: 5px;
+   margin: 5px;
+   border: none;
+   border-bottom: 2px solid;
+}
+
+.registration_form input:focus
+{
+   outline: none;
+}
+
+.submit
+{
+   border: 2px solid rgba(84, 109, 229,1.0) !important;
+   background: none;
+   cursor: pointer;
+   width: 50%;
+   transition: 0.3s;
+}
+
+.submit:hover
+{
+   background-color: rgba(84, 109, 229,1.0);
+   color: white;
+}

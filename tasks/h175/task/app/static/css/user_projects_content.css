@@ -1,0 +1,21 @@
+.user_project
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   border-bottom: 2px solid #303952;
+}
+
+.user_project div
+{
+   text-align: center;
+   width: 33%;
+   padding: 5px;
+   transition: 0.3s;
+}
+
+.user_project:hover
+{
+   background-color: #303952;
+   color: white;
+}

@@ -1,0 +1,93 @@
+.inf .author
+{
+   font-size: 22px;
+}
+
+.inf .date
+{
+   font-size: 14px;
+   padding: 8px;
+}
+
+.project_download, .project_edit
+{
+   border: 2px solid rgba(84, 109, 229,1.0) !important;
+   background: none;
+   cursor: pointer;
+   text-align: center;
+   width: 150px;
+   transition: 0.3s;
+   margin-top: 5px;
+}
+
+.project_download:hover, .project_edit:hover
+{
+   background-color: rgba(84, 109, 229,1.0);
+   color: white;
+}
+
+.comments
+{
+   display: flex;
+   flex-direction: column;
+   width: 930px;
+   margin-top: 10px;
+}
+
+.comment
+{
+   display: flex;
+   flex-direction: row;
+   border: 1px solid grey;
+   margin-top: 5px;
+}
+
+.commentator
+{
+   width: 150px;
+   border-right: 1px solid grey;
+}
+
+.commentator_photo
+{
+   height: 150px;
+   width: 150px;
+}
+
+.commentator_photo img
+{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+.commentator_name
+{
+   text-align: center;
+}
+
+.comment_content
+{
+   padding: 10px;
+   margin: 15px;
+   display: inline-block;
+   position: relative;
+   width: 720px;
+}
+
+.comment_form
+{
+   width: 500px;
+}
+
+.comment_form textarea
+{
+   padding: 5px;
+   width: 400px;
+   height: 100px;
+}
+
+.comment_form textarea:focus
+{
+   outline: none;
+}

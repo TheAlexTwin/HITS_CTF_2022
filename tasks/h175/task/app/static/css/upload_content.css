@@ -1,0 +1,49 @@
+.upload input:focus
+{
+   outline: none;
+}
+
+.upload input
+{
+   color: black;
+   padding: 5px;
+   margin: 5px;
+   border: none;
+   border-bottom: 2px solid;
+   width: 400px;
+}
+
+.upload .radio_button
+{
+  width: auto;
+}
+
+.upload textarea
+{
+   padding: 5px;
+   margin: 5px;
+   border: 2px solid;
+   width: 400px;
+   height: 100px;
+}
+
+.upload textarea:focus
+{
+   outline: none;
+}
+
+.upload select
+{
+   padding: 5px;
+   margin: 5px;
+}
+
+.upload select:focus
+{
+   outline: none;
+}
+
+.upload .submit
+{
+   width: 20%;
+}
