@@ -1,29 +1,11 @@
 version: "3"
 
 services:
-  br0k3n_c451n0:
-    build: br0k3n_c451n0
-    container_name: "br0k3n_c451n0"
+  r0ul3tt3:
+    build: r0ul3tt3
+    container_name: "r0ul3tt3"
     env_file:
-      - br0k3n_c451n0/.env
+      - r0ul3tt3/.env
     ports:
       - "10008:8080"
-    restart: "always"
-
-  unf41r_c451n0:
-    build: unf41r_c451n0
-    container_name: "unf41r_c451n0"
-    env_file:
-      - unf41r_c451n0/.env
-    ports:
-      - "10002:8080"
-    restart: "always"
-
-  b4ckd00r3d_c451n0:
-    build: b4ckd00r3d_c451n0
-    container_name: "b4ckd00r3d_c451n0"
-    env_file:
-      - b4ckd00r3d_c451n0/.env
-    ports:
-      - "10009:8080"
     restart: "always"

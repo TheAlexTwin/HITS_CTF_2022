@@ -1,4 +1,4 @@
-# P0dv4l (Hard)
+# P0dv4l (Medium)
 
 ## Legend
 

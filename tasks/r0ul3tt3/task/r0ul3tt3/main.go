@@ -104,7 +104,7 @@ func handleConnection(conn net.Conn) {
 			return
 		}
 
-		if money >= 1000000 {
+		if money >= 10000000 {
 			_, _ = conn.Write([]byte(VICTORY + "\n"))
 			_, _ = conn.Write([]byte(FLAG + "\n"))
 			return
