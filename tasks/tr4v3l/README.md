@@ -42,7 +42,7 @@ Find as many working proxy-servers as possible and send traffic to /travel/:your
 
 ## Flags
 
-**HITS{n0w_y0u_kn0w_th3_r00l5}**
+**HITS{n0w_y0u_kn0w_th3_rul35}**
 
 **HITS{4dv3ntur3_15_ju57_b3gun}**
 

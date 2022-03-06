@@ -106,7 +106,7 @@ func getTemplateDataByCookie(cookie *http.Cookie) UserTemplate {
 	}
 
 	if len(countries) >= 3 {
-		user.Flag1 = "HITS{n0w_y0u_kn0w_th3_r00l5}"
+		user.Flag1 = "HITS{n0w_y0u_kn0w_th3_rul35}"
 	}
 	if len(countries) >= 9 {
 		user.Flag2 = "HITS{4dv3ntur3_15_ju57_b3gun}"
