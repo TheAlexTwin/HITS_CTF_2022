@@ -7,7 +7,7 @@ services:
     restart: always
     ports:
       - "10003:3000"
-    env:
+    environment:
       FLAG: HITS{my_f4v0r173_4r71cl3_15_rc3}
     networks:
       - default
