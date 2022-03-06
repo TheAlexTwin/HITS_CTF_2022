@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  m0b1l3_4p1:
+    build: api
+    container_name: "m0b1l3_4p1"
+    ports:
+      - "10006:8000"
+    restart: "always"
