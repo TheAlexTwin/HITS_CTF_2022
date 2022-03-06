@@ -6,4 +6,7 @@ services:
     container_name: "m0b1l3_4p1"
     ports:
       - "10006:8000"
+    environment:
+      FLAG1: HITS{fr33_r34l_35t4t3}
+      FLAG2: HITS{y34h_1_kn0w_h0w_t0_u53_AES}
     restart: "always"
