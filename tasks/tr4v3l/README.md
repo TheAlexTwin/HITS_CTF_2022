@@ -40,6 +40,8 @@ Proxy-server abuser or IDK.
 
 Find as many working proxy-servers as possible and send traffic to /travel/:your_id: from them.
 
+**Bonus unintended vulnerability:** you can login as known user with any password! (I missed that somehow...)
+
 ## Flags
 
 **HITS{n0w_y0u_kn0w_th3_rul35}**
